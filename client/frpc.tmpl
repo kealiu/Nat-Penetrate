@@ -1,0 +1,11 @@
+serverAddr = "{{server}}"
+serverPort = {{serverport}}
+auth.method = "token"
+auth.token = "{{servertoken}}"
+
+[[proxies]]
+name = "{{deviceuuid}}"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 80
+remotePort = {{remoteport}}
